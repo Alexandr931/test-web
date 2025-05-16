@@ -760,4 +760,24 @@ button {
     .section-button:hover {
         background-color: #2EDB8D;
     }
+
+    .like, .follow {
+        display: inline-block;
+        cursor: pointer; 
+        transition: transform 0.3s ease, fill 0.3s ease;
+    }
+
+    .like:hover, .like:active,
+    .follow:hover, .follow:active {
+        transform: scale(1.1); 
+    }
+
+    .like:hover svg path, .like:active svg path,
+    .follow:hover svg path, .follow:active svg path {
+        fill: #FFD700;
+    }
+
+    .active svg path {
+        fill: #FFD700; 
+    }
   }

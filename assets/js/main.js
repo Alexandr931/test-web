@@ -150,6 +150,12 @@ function openPopup() {
     });
 
     
+    document.querySelectorAll('.like, .follow').forEach(function(element) {
+        element.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+
 
     initPhoneMask();
 });
