@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('openModal').onclick = function() {
-        document.getElementById('videoModal').style.display = 'flex';
+        document.getElementById('videoModal').style.display = 'block';
         
         document.getElementById('videoFrame').src = 'https://vkvideo.ru/video_ext.php?oid=222530954&id=456239039&hd=2&hash=318dbfe1fa04fef4&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen'; // Замените параметры на актуальные
     }

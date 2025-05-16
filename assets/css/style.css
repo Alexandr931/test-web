@@ -98,6 +98,7 @@ picture {
     display: block;
 }
 
+
 /* glob */
 html.lock {
     overflow: hidden;
@@ -342,12 +343,14 @@ body {
 
 .card__description{
     margin-bottom: 27px;
+    flex-grow: 1;
 }
 
 .card__horizontal{
     display: flex;
     flex-direction: column;
-    max-width: 184px;
+    flex-grow: 1;
+    max-width: 50%;
     border-radius: 5px;
 }
 
@@ -373,6 +376,9 @@ body {
     padding: 12px;
     background-color: #FFFFFF;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .card__price-color{
@@ -582,7 +588,7 @@ button {
 /* modal */
 
   .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -605,7 +611,7 @@ button {
 .close {
     color: white;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 25px;
     font-size: 30px;
     font-weight: bold;
